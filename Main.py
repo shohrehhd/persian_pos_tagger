@@ -122,7 +122,7 @@ try:
         fp2 = open(input_string+"_output_file.txt",'w',encoding='utf8');
         fp = open(input_string,encoding='utf8')
         text = fp.read()
-        lines = text.split("\n")
+        lines = text.split()
 
         WORDS_ID = json.load(open("word_id_tab.txt",'r',encoding='utf8'))
         TAGS_ID = json.load(open("tag_id_tab.txt",'r',encoding='utf8'))
